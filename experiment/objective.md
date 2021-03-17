@@ -1,0 +1,1 @@
+Identification of unknown compounds through combination of spectroscopic methods. Used here are Infrared spectroscopy, Nuclear magnetic Resonance and Mass spectroscopy.
