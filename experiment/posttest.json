@@ -2,38 +2,72 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "1. Which of the following wavelength ranges is associated with UV spectroscopy?",
+      "question": "1. Which of the following statements regarding IR spectroscopy is correct?",
       "answers": {
-        "a": "0.8 - 500 µm",
-        "b": "400 - 100 nm",
-        "c": "380 - 750 nm",
-        "d": "0.01 - 10 nm"
+        "a": "IR radiation is higher in energy than UV radiation",
+        "b": "IR spectra records the scattering of the radiation",
+        "c": "IR spectra gives information about the ƛ<sub>max</sub> of the molecule",
+        "d": "IR radiation is higher in wavelength than UV radiation"
       },
       "explanations": {
-        "a": "this is the IR region",
-        "b": "this is the near IR region and not used in UV spectroscopy",
-        "c": "This is the UV-Visible range. UV Spectroscopy uses this range of radiations.",
-        "d": "this is the X-ray range of radiation"
+        "a": "IR radiation has lower frequency than UV due to which IR has lower energy than UV.",
+        "b": "Scattering is not recorded by IR but X-ray scattering.",
+        "c": "ƛ<sub>max</sub> is a property of UV spectra.",
+        "d": "IR radiations are higher in wavelength than UV."
+      },
+      "difficulty": "beginner",
+      "correctAnswer": "d"
+    },
+    {
+      "question": "2. What is the condition for a molecule to be Microwave active?",
+      "answers": {
+        "a": "Change in dipole movement",
+        "b": "Change in polarisability",
+        "c": "Permanent dipole movement",
+        "d": "Isotopic labelling"
+      },
+      "explanations": {
+        "a": "microwave spectroscopy arises due to rotation of the molecule, rotation alone cannot produce any change in the dipole moment.",
+        "b": "change of  polarisability does not affect the microwave interaction of the molecule.",
+        "c": "all molecules which have permanent dipole moment are microwave active.",
+        "d": "isotopic labelling does not qualify for a molecule to be Microwave active as labelling is done to identify a specific atom or reaction."
       },
       "difficulty": "intermediate",
       "correctAnswer": "c"
     },
     {
-      "question": "2. In infrared spectroscopy which frequency range is known as the fingerprint region?",
+      "question": "3. Identify the correct statement.",
       "answers": {
-        "a": "400 - 1400cm<sup>-1</sup>",
-        "b": "1400 - 1700cm<sup>-1</sup>",
-        "c": "1700 - 3000cm<sup>-1</sup>",
-        "d": "3000 - 4000cm<sup>-1</sup>"
+        "a": "NMR signals towards the left of the spectrum correspond to low chemical shift values.",
+        "b": "NMR signals towards the right of the spectrum correspond to high chemical shift values",
+        "c": "Chemical shift values are larger when shielding effects are greater",
+        "d": "Chemical shift values are larger when deshielding effects are greater"
       },
       "explanations": {
-        "a": "this is the fingerprint region of IR spectroscopy where a large number of peaks are obtained and it is difficult to identify them",
-        "b": "this is the IR range for C=C, C=O and C=N.",
-        "c": "this is the IR range for C triple bonded to C and N.",
-        "d": "this is the IR range for single bonds involving H."
+        "a": "NMR signals towards the left of the spectrum correspond to high chemical shift values.",
+        "b": "NMR signals towards the right of the spectrum correspond to low chemical shift values",
+        "c": "Chemical shift values are smaller when shielding effects are greater i.e. the values are closer to 0.",
+        "d": "Chemical shift values are larger when deshielding effects are greater i.e. the values are farther away from 0."
       },
-      "difficulty": "intermediate",
-      "correctAnswer": "a"
+      "difficulty": "advanced",
+      "correctAnswer": "d"
+    },
+    {
+      "question": "4. The absorption intensity on an absorption spectrum tells us:",
+      "answers": {
+        "a": "energy associated with a particular excitation.",
+        "b": "the ease of transition.",
+        "c": "the concentration of the absorbing part of the molecule.",
+        "d": "both the ease of transition and the concentration of the absorbing part of the molecule."
+      },
+      "explanations": {
+        "a": "energy of transition is given by the position of the signal and not its intensity.",
+        "b": "ease of transition does affect the intensity but only to some extent.",
+        "c": "absorption intensity depends on the concentration of the absorbing part of the molecule.",
+        "d": "absorption intensity depends more on the concentration."
+      },
+      "difficulty": "advanced",
+      "correctAnswer": "c"
     }
   ]
 }

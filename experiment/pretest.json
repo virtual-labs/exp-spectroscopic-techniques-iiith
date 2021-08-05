@@ -32,7 +32,41 @@
         "c": "it does not absorb infrared waves.",
         "d": "it does not absorb UV rays too."
       },
+      "difficulty": "beginner",
+      "correctAnswer": "a"
+    },
+    {
+      "question": "3. Which of the following wavelength ranges is associated with UV spectroscopy?",
+      "answers": {
+        "a": "0.8 - 500 µm",
+        "b": "400 - 100 nm",
+        "c": "380 - 750 nm",
+        "d": "0.01 - 10 nm"
+      },
+      "explanations": {
+        "a": "this is the IR region",
+        "b": "this is the near IR region and not used in UV spectroscopy",
+        "c": "This is the UV-Visible range. UV Spectroscopy uses this range of radiations.",
+        "d": "this is the X-ray range of radiation"
+      },
       "difficulty": "intermediate",
+      "correctAnswer": "c"
+    },
+    {
+      "question": "4. In infrared spectroscopy which frequency range is known as the fingerprint region?",
+      "answers": {
+        "a": "400 - 1400cm<sup>-1</sup>",
+        "b": "1400 - 1700cm<sup>-1</sup>",
+        "c": "1700 - 3000cm<sup>-1</sup>",
+        "d": "3000 - 4000cm<sup>-1</sup>"
+      },
+      "explanations": {
+        "a": "this is the fingerprint region of IR spectroscopy where a large number of peaks are obtained and it is difficult to identify them",
+        "b": "this is the IR range for C=C, C=O and C=N.",
+        "c": "this is the IR range for C triple bonded to C and N.",
+        "d": "this is the IR range for single bonds involving H."
+      },
+      "difficulty": "advanced",
       "correctAnswer": "a"
     }
   ]
