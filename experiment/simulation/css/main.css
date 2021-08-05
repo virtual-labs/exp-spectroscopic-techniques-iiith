@@ -98,6 +98,20 @@ figcaption {
 
 .v-radio {
   margin-bottom: 1rem;
+  margin-left: 0 !important;
+  text-align: start;
+}
+
+.technique-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.technique-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 @media screen and (min-width: 769px) {

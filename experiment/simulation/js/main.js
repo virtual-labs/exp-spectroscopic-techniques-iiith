@@ -318,6 +318,7 @@ async function restart() {
   document.getElementById("device-tube").style.display = "none";
   document.getElementById("device-spectro").style.display = "none";
   document.getElementById("technique-container").style.display = "block";
+  document.getElementById("choice-option").style.display = "block";
 
   //Resetting the Tube
   let path = document.getElementById("tube-path");
@@ -425,7 +426,9 @@ function createMassGraph() {
     },
   };
 
-  Plotly.newPlot("chart-container", data, layout);
+  var config = { responsive: true };
+
+  Plotly.newPlot("chart-container", data, layout, config);
 }
 
 function createIRGraph() {
@@ -558,7 +561,9 @@ function createIRGraph() {
     },
   };
 
-  Plotly.newPlot("chart-container", data, layout);
+  var config = { responsive: true };
+
+  Plotly.newPlot("chart-container", data, layout, config);
 }
 
 function createNMRGraph() {
@@ -586,7 +591,9 @@ function createNMRGraph() {
     },
   };
 
-  Plotly.newPlot("chart-container", data, layout);
+  var config = { responsive: true };
+
+  Plotly.newPlot("chart-container", data, layout, config);
 }
 
 document.getElementById("beaker-sample").style.display = "none";
@@ -598,6 +605,7 @@ if (document.querySelector('input[name="choice"]')) {
     elem.addEventListener("change", function (event) {
       choice = event.target.value;
       document.getElementById("technique-container").style.display = "none";
+      document.getElementById("choice-option").style.display = "none";
       setApparatusMenu();
       document.getElementById("beaker-sample").style.display = "block";
       document.getElementById("device-tube").style.display = "block";
