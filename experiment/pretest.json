@@ -1,0 +1,39 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Nuclear magnetic resonance (NMR) uses which electromagnetic wave to analyze material?",
+      "answers": {
+        "a": "Radio Infrared",
+        "b": "Ultraviolet",
+        "c": "X-ray",
+        "d": "Microwave"
+      },
+      "explanations": {
+        "a": "Radio waves are used to flip the spin of protons in NMR.",
+        "b": "Ultraviolet waves are used in UV-Visible spectroscopy",
+        "c": "X-ray are used in X-ray diffraction spectroscopy.",
+        "d": "Microwaves are used in rotational spectroscopy."
+      },
+      "difficulty": "beginner",
+      "correctAnswer": "a"
+    },
+    {
+      "question": "2. Mass spectrometry differs from spectroscopy because:",
+      "answers": {
+        "a": "it is a destructive technique.",
+        "b": "it involves the absorption of radio waves.",
+        "c": "it involves the absorption of infrared waves.",
+        "d": "it involves the absorption of ultraviolet waves"
+      },
+      "explanations": {
+        "a": "it is a destructive technique as it destroys the sample and breaks it into smaller fragments.",
+        "b": "it does not absorb radio waves.",
+        "c": "it does not absorb infrared waves.",
+        "d": "it does not absorb UV rays too."
+      },
+      "difficulty": "intermediate",
+      "correctAnswer": "a"
+    }
+  ]
+}
