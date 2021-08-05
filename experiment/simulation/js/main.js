@@ -425,7 +425,9 @@ function createMassGraph() {
     },
   };
 
-  Plotly.newPlot("chart-container", data, layout);
+  var config = { responsive: true };
+
+  Plotly.newPlot("chart-container", data, layout, config);
 }
 
 function createIRGraph() {
@@ -558,7 +560,9 @@ function createIRGraph() {
     },
   };
 
-  Plotly.newPlot("chart-container", data, layout);
+  var config = { responsive: true };
+
+  Plotly.newPlot("chart-container", data, layout, config);
 }
 
 function createNMRGraph() {
@@ -586,7 +590,9 @@ function createNMRGraph() {
     },
   };
 
-  Plotly.newPlot("chart-container", data, layout);
+  var config = { responsive: true };
+
+  Plotly.newPlot("chart-container", data, layout, config);
 }
 
 document.getElementById("beaker-sample").style.display = "none";
