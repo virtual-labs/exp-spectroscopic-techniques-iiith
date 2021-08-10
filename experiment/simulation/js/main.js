@@ -261,7 +261,6 @@ async function visibility(x) {
     overallIteration++;
     setupMessage();
   } else if (x === 3 && overallIteration === 0) {
-    document.getElementById("spectro-row").style.visibility = "visible";
     apparatusSetup("spectro-row", "device-spectro", "restart");
     document.getElementById("sample").style.cursor = "pointer";
     overallIteration++;
