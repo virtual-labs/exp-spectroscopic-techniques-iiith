@@ -7,6 +7,19 @@ let yellow = "#cecc9b";
 let instructionMessages;
 let observationMessages;
 
+const apparatusOptions = [
+  "beaker-sample",
+  "device-tube",
+  "device-spectro",
+  "observe",
+];
+
+apparatusOptions.forEach(function (option) {
+  document.getElementById(option).style.pointerEvents = "none";
+});
+
+document.getElementById("beaker-sample").style.pointerEvents = "auto";
+
 function setApparatusMenu() {
   if (choice === "mass") {
     document.getElementById("device-spectro").innerHTML = "Mass Spectrometer";
@@ -80,13 +93,13 @@ async function moveTube() {
     duration: 800,
     easing: "linear",
   });
-  let transX = 630;
+  let transX = 560;
   let transY = -10;
   let sc = 0.4;
   screenWidth();
   if (divWidth < 769) {
     transX = -10;
-    transY = 500;
+    transY = 410;
   }
   if (overallIteration === 2) {
     a1.add({
@@ -103,6 +116,9 @@ async function moveTube() {
         translateY: 0,
         scale: 1,
       });
+
+    document.getElementById("tube").style.cursor = "default";
+    document.getElementById("observe").style.pointerEvents = "auto";
 
     if (choice === "nmr") {
       //"instruction" is the Instructions HTML element that will be visible only in wide screens, i.e, width greater than 768px
@@ -228,18 +244,26 @@ function setupMessage() {
   setup++;
 }
 
+function apparatusSetup(visibleID, oldOption, newOption) {
+  document.getElementById(visibleID).style.visibility = "visible";
+  document.getElementById(oldOption).style.pointerEvents = "none";
+  document.getElementById(newOption).style.pointerEvents = "auto";
+}
+
 setupMessage();
 async function visibility(x) {
   if (x === 1 && overallIteration === -2) {
-    document.getElementById("sample-row").style.visibility = "visible";
+    apparatusSetup("sample-row", "beaker-sample", "device-tube");
     overallIteration++;
     setupMessage();
   } else if (x === 2 && overallIteration === -1) {
-    document.getElementById("tube-row").style.visibility = "visible";
+    apparatusSetup("tube-row", "device-tube", "device-spectro");
     overallIteration++;
     setupMessage();
   } else if (x === 3 && overallIteration === 0) {
     document.getElementById("spectro-row").style.visibility = "visible";
+    apparatusSetup("spectro-row", "device-spectro", "restart");
+    document.getElementById("sample").style.cursor = "pointer";
     overallIteration++;
     changeMessage();
   }
@@ -253,8 +277,6 @@ function changeMessage() {
   //"observation" is the Instructions HTML element that will be visible only in small screens, i.e., width smaller than 769px
   document.getElementById("observation").innerHTML = instructionMessages[iter1];
 }
-
-document.getElementById("sample").style.cursor = "pointer";
 
 let iter2 = -1;
 
@@ -283,6 +305,11 @@ document.getElementById("simulation").style.minHeight =
 let restartAnimation = false;
 
 async function restart() {
+  apparatusOptions.forEach(function (option) {
+    document.getElementById(option).style.pointerEvents = "none";
+  });
+  document.getElementById("beaker-sample").style.pointerEvents = "auto";
+
   document.getElementById("simulation").style.height = originalSimulationHeight;
 
   document.getElementById("animation-video").style.display = "none";
@@ -310,7 +337,7 @@ async function restart() {
   restartAnimation = true;
 
   document.getElementById("tube").style.cursor = "default";
-  document.getElementById("sample").style.cursor = "pointer";
+  document.getElementById("sample").style.cursor = "default";
   document.getElementById("spectro").style.cursor = "default";
   document.getElementById("spectro").style.minHeight = "none";
 
@@ -329,6 +356,7 @@ async function restart() {
 
 async function observe() {
   if (overallIteration === 3) {
+    document.getElementById("observe").style.pointerEvents = "none";
     document.getElementById("slidecontainer").style.display = "block";
     document.getElementById("apparatus-bottles").style.display = "none";
     document.getElementById("apparatus-spectro").style.display = "none";
@@ -350,6 +378,7 @@ async function observe() {
 
     if (!restartAnimation) {
       overallIteration++;
+      document.getElementById("observe").style.pointerEvents = "auto";
 
       //"instruction" is the Instructions HTML element that will be visible only in wide screens, i.e, width greater than 768px
       document.getElementById("instruction").innerHTML =
@@ -359,6 +388,7 @@ async function observe() {
         "Click on Observe option in the Control Menu again to see the graph.";
     }
   } else if (overallIteration === 4) {
+    document.getElementById("observe").style.pointerEvents = "none";
     observeMessage();
 
     document.getElementById("slidecontainer").style.display = "none";
@@ -426,7 +456,7 @@ function createMassGraph() {
     },
   };
 
-  var config = { responsive: true };
+  let config = { responsive: true };
 
   Plotly.newPlot("chart-container", data, layout, config);
 }
@@ -561,7 +591,7 @@ function createIRGraph() {
     },
   };
 
-  var config = { responsive: true };
+  let config = { responsive: true };
 
   Plotly.newPlot("chart-container", data, layout, config);
 }
@@ -591,7 +621,7 @@ function createNMRGraph() {
     },
   };
 
-  var config = { responsive: true };
+  let config = { responsive: true };
 
   Plotly.newPlot("chart-container", data, layout, config);
 }
