@@ -456,7 +456,6 @@ function createMassGraph() {
   };
 
   let config = { responsive: true };
-
   Plotly.newPlot("chart-container", data, layout, config);
 }
 
@@ -591,7 +590,6 @@ function createIRGraph() {
   };
 
   let config = { responsive: true };
-
   Plotly.newPlot("chart-container", data, layout, config);
 }
 
@@ -621,7 +619,6 @@ function createNMRGraph() {
   };
 
   let config = { responsive: true };
-
   Plotly.newPlot("chart-container", data, layout, config);
 }
 
