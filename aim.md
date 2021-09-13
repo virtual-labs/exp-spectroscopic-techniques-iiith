@@ -1,0 +1,1 @@
+The aim of this experiment is the identification of unknown compounds through a combination of spectroscopic methods. Used here are Infrared spectroscopy, Nuclear Magnetic Resonance, and Mass spectroscopy.
