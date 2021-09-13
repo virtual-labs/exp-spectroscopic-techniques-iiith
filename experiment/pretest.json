@@ -1,0 +1,73 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Nuclear magnetic resonance (NMR) uses which electromagnetic wave to analyze material?",
+      "answers": {
+        "a": "Radio Infrared",
+        "b": "Ultraviolet",
+        "c": "X-ray",
+        "d": "Microwave"
+      },
+      "explanations": {
+        "a": "Radio waves are used to flip the spin of protons in NMR.",
+        "b": "Ultraviolet waves are used in UV-Visible spectroscopy",
+        "c": "X-ray are used in X-ray diffraction spectroscopy.",
+        "d": "Microwaves are used in rotational spectroscopy."
+      },
+      "difficulty": "beginner",
+      "correctAnswer": "a"
+    },
+    {
+      "question": "2. Mass spectrometry differs from spectroscopy because:",
+      "answers": {
+        "a": "it is a destructive technique.",
+        "b": "it involves the absorption of radio waves.",
+        "c": "it involves the absorption of infrared waves.",
+        "d": "it involves the absorption of ultraviolet waves"
+      },
+      "explanations": {
+        "a": "it is a destructive technique as it destroys the sample and breaks it into smaller fragments.",
+        "b": "it does not absorb radio waves.",
+        "c": "it does not absorb infrared waves.",
+        "d": "it does not absorb UV rays too."
+      },
+      "difficulty": "beginner",
+      "correctAnswer": "a"
+    },
+    {
+      "question": "3. Which of the following wavelength ranges is associated with UV spectroscopy?",
+      "answers": {
+        "a": "0.8 - 500 µm",
+        "b": "400 - 100 nm",
+        "c": "380 - 750 nm",
+        "d": "0.01 - 10 nm"
+      },
+      "explanations": {
+        "a": "this is the IR region",
+        "b": "this is the near IR region and not used in UV spectroscopy",
+        "c": "This is the UV-Visible range. UV Spectroscopy uses this range of radiations.",
+        "d": "this is the X-ray range of radiation"
+      },
+      "difficulty": "intermediate",
+      "correctAnswer": "c"
+    },
+    {
+      "question": "4. In infrared spectroscopy which frequency range is known as the fingerprint region?",
+      "answers": {
+        "a": "400 - 1400cm<sup>-1</sup>",
+        "b": "1400 - 1700cm<sup>-1</sup>",
+        "c": "1700 - 3000cm<sup>-1</sup>",
+        "d": "3000 - 4000cm<sup>-1</sup>"
+      },
+      "explanations": {
+        "a": "this is the fingerprint region of IR spectroscopy where a large number of peaks are obtained and it is difficult to identify them",
+        "b": "this is the IR range for C=C, C=O and C=N.",
+        "c": "this is the IR range for C triple bonded to C and N.",
+        "d": "this is the IR range for single bonds involving H."
+      },
+      "difficulty": "advanced",
+      "correctAnswer": "a"
+    }
+  ]
+}
